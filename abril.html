@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación de Cumpleaños</title>
+  <link rel="stylesheet" href="abril.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body>
+  <audio id="bg-music" autoplay loop>
+    <source src="clocks.mp3" type="audio/mpeg">
+  </audio>
+  <!-- <audio id="bg-music" loop>
+    <source src="clocks.mp4" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    const music = document.getElementById("bg-music");
+  
+    function startMusic() {
+      music.muted = false;
+      music.play().catch(() => {
+        console.log("El navegador bloqueó el autoplay con sonido");
+      });
+      // Lo saco después de la primera vez para que no intente arrancar siempre
+      window.removeEventListener("scroll", startMusic);
+    }
+  
+    // Escuchar cuando el usuario haga scroll
+    window.addEventListener("scroll", startMusic);
+  </script> -->
+  
+  <!-- SECCIÓN PORTADA -->
+  <section class="portada">
+    <img src="img/abril nombre- plateado-final con corona.png" alt="Portada" width="1000%">
+    <h1>Mis 15 años </h1>
+    
+  </section>
+
+  
+
+  <!-- SECCIÓN INFO -->
+  <section class="info">
+    <img src="img/decorativo1.png" alt="Decoración" class="linea-decorativa">
+    <h2 >Te invito a acompañarme en una noche mágica, única y llena de alegría que quedará en mi corazón para siempre.</h2>
+    <img src="img/1000505924.jpg" alt="" width="90%">
+  </section>
+
+  <section class="info-datos">
+    <h2>Sábado 20 de septiembre del 2025 </h2>
+    <h2>21:30hs</h2>
+    <h2>Salón de eventos Milenium </h2>
+    <h2>Trelew - Chubut</h2>
+    
+    <div class="botones">
+      <a href="https://maps.app.goo.gl/im2hBcJf1ECRe9bu6" target="_blank" class="btn">Cómo llegar</a>
+      <!-- <a href="https://wa.me/5492804648619" target="_blank" class="btn">Confirmar asistencia</a> -->
+      <!-- <a href="https://drive.google.com" target="_blank" class="btn">Lista de regalos</a> -->
+    </div>
+  </section>
+
+  <!-- SECCIÓN CARRUSEL -->
+  <section class="carrusel">
+    <div class="slider">
+      <div class="slides">
+        <img src="img/1000505923.jpg" alt="Foto 1">
+        <img src="img/1000505926.jpg" alt="Foto 2">
+        <img src="img/1000505929.jpg" alt="Foto 3">
+        <!-- duplicadas -->
+      <img src="img/1000505923.jpg" alt="Foto 1 duplicada">
+      <img src="img/1000505926.jpg" alt="Foto 2 duplicada">
+      <img src="img/1000505929.jpg" alt="Foto 3 duplicada">
+      </div>
+    </div>
+  </section>
+
+  <img src="img/decorativo1.png" alt="Decoración" class="linea-decorativa">
+
+  <section class="alias">
+    <h2>Tu presencia será mi mayor regalo, pero si deseas obsequiarme algo te dejo mi alias:</h2>
+    <a  class="btn" id="btn">abrillefipan</a>
+    <img src="img/1000505927.jpg" alt="" width="130%" class="img-alias">
+  </section>
+
+  
+
+  <!-- SECCIÓN FINAL -->
+  <img src="img/decorativo1.png" alt="Decoración" class="linea-decorativa">
+  <section class="final">
+    <h2>Me encantaría contar con vos...</h2>
+    <div class="botones">
+      <!-- <a href="https://maps.app.goo.gl/im2hBcJf1ECRe9bu6" target="_blank" class="btn">Cómo llegar</a> -->
+      <a href="https://wa.me/5492804648619" target="_blank" class="btn">Confirmar asistencia</a>
+      <!-- <a href="https://drive.google.com" target="_blank" class="btn">Lista de regalos</a> -->
+    </div>
+    <img src="img/1000505928.jpg" alt="" width="90%" class="img-alias">
+    <h2 >Te espero!</h2>
+    
+
+</body>
+</html>

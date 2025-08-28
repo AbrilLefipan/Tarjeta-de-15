@@ -1,0 +1,212 @@
+/* Fuente */
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap'); */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Story+Script&display=swap');
+
+
+body {
+  margin: 0;
+  font-family: "Story Script", sans-serif;
+  background: linear-gradient(135deg, #000000, #0101fc, #000000);
+  background-attachment: fixed; /* hace que no se mueva al scrollear */
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-width: 300px;
+  height: 100vh;
+}
+
+/* SECCIONES */
+section {
+  background: transparent; /* cada sección se vuelve transparente */
+  /* padding: 50px 20px; */
+  min-height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* .portada {
+  /* background: linear-gradient(135deg,  #000000, #0101fc, #000000); */
+/* } */ 
+
+.portada img {
+  width: 90%;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  /* Animación */
+  opacity: 0;
+  transform: translateY(-100px);  /* empieza más arriba */
+  animation: slideDown 4s ease-out forwards; 
+}
+
+/* Keyframes */
+@keyframes slideDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portada h1 {
+  font-size: 70px;
+  margin: 10px 0;
+  color: 	#BEBEBE;
+  transform: translateY(50px); /* arranca más abajo */
+  animation: subir 4s ease-out forwards;
+  font-family: "Story Script", sans-serif;
+}
+
+.story-script-regular {
+  font-family: "Story Script", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@keyframes subir {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.portada span {
+  /*color: #1e90ff;*/
+  font-weight: 600;
+}
+
+/* INFO */
+.info h2 {
+  font-size: 30px;
+  font: bold; 
+  font-family: "Story Script", sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+
+}
+
+
+.info-datos {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font: bold; 
+  font-family: "Story Script", sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 20%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+
+.botones {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  
+}
+.btn {
+  text-decoration: none;
+  background: #083c71;
+  color: white;
+  padding: 12px 45px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: 0.3s;
+  font-size: 24px;
+}
+
+
+.btn:hover {
+  background: #021737;
+  transform: scale(1.05);
+}
+
+/* CARRUSEL */
+
+.carrusel h2 {
+  margin-bottom: 20px;
+}
+
+
+.slider {
+  width: 100%;
+  height: 100vh;   /* o podés usar 60vh si no querés pantalla completa */
+  overflow: hidden;
+  position: relative;
+}
+
+.slides {
+  display: flex;
+  width: 300%;     /* 3 imágenes = 300% */
+  height: 100%;
+  animation: slide 45s infinite;
+}
+
+.slides img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover; /* recorta sin deformar */
+  flex-shrink: 0;    /* evita que se encoja en responsive */
+}
+
+
+@keyframes slide {
+  0%   { transform: translateX(0); }        /* foto 1 */
+  33.333%  { transform: translateX(-100%); } /* foto 2 */
+  66.666%  { transform: translateX(-200%); } /* foto 3 */
+  100% { transform: translateX(0); }         /* vuelve a foto 1 */
+}
+
+.alias{
+  font-size: 20px;
+  font: bold; 
+  font-family: "Story Script", sans-serif;
+  color: #BEBEBE;
+  margin-bottom: 20%;
+  margin-top: 60px;
+  margin-left: 15%;
+  margin-right: 15%;
+  
+}
+
+.img-alias{
+  margin-top: 100px;
+  margin-bottom: 20px;
+}
+
+/* FINAL */
+.final {
+  /* background: linear-gradient(135deg,  #000000, #0101fc, #000000); */
+  color: white;
+  
+}
+.final h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+  margin-left: 15%;
+  margin-right: 15%;
+  font-family: "Story Script", sans-serif;
+  color: #BEBEBE;
+}
+
+.linea-decorativa {
+  display: block;
+  top: 0;
+  bottom: 0;
+  margin: 30px auto;  /* centrado con espacio */
+  max-width: 80%;    /* que no se deforme */
+  height: auto;
+}
